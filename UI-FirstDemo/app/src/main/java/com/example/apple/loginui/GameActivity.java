@@ -26,6 +26,8 @@ public class GameActivity extends AppCompatActivity {
         //test5 commit and push
         //test6 before switch
         //test7 still push?
+        //test8 working now>?
+        //now?
         return true;
     }
 
