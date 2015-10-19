@@ -1,0 +1,59 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/b3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:stretchColumns="0,3">
+    <TableRow
+        android:layout_marginTop="1000px">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:text="Single Player Mode"
+            android:id="@+id/button1"
+            android:onClick="onClick"
+            android:layout_gravity="center"
+            android:singleLine="false" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:layout_width="20px"
+            android:layout_height="110px"
+            android:text="Multi-Player Mode"
+            android:id="@+id/button2"
+            android:onClick="onClick"
+            android:layout_gravity="center" />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:layout_width="20px"
+            android:layout_height="110px"
+            android:text="Extra"
+            android:id="@+id/button3"
+            android:onClick="onClick"
+            android:layout_gravity="center" />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="110px"
+            android:text="Options"
+            android:id="@+id/button4"
+            android:layout_gravity="center" />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="110px"
+            android:text="Exit"
+            android:id="@+id/button5"
+            android:layout_gravity="center" />
+    </TableRow>
+</TableLayout>
