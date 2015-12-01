@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Music and Sound Effects">
+        <CheckBoxPreference
+            android:key="prefMusicSwitch"
+            android:title="Music"
+            android:summaryOn="On"
+            android:summaryOff="Off"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="prefSoundEffectsSwitch"
+            android:title="Sound Effects"
+            android:summaryOn="On"
+            android:summaryOff="Off"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Category 2">
+        <CheckBoxPreference
+            android:key="pref_test"
+            android:title="test"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

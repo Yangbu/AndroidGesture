@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+    <!--android:background="@drawable/map"-->
+
+
+    <Button
+        android:id="@+id/btn_stage1_1"
+        android:layout_width="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅰ"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_stagechoose_stage1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_stage2_1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅰ"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_stagechoose_stage2"
+        android:layout_alignStart="@+id/btn_stage1_1" />
+
+    <Button
+        android:id="@+id/btn_stage1_2"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅱ"
+        android:layout_alignTop="@+id/btn_stage1_1"
+        android:layout_toEndOf="@+id/btn_stage1_1" />
+
+    <Button
+        android:id="@+id/btn_stage1_3"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅲ"
+        android:layout_alignTop="@+id/btn_stage1_2"
+        android:layout_toEndOf="@+id/btn_stage1_2"
+        android:layout_alignBottom="@+id/btn_stage1_2" />
+
+    <Button
+        android:id="@+id/btn_stage1_4"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅳ"
+        android:layout_alignTop="@+id/btn_stage1_3"
+        android:layout_toEndOf="@+id/btn_stage1_3" />
+
+    <Button
+        android:id="@+id/btn_stage1_5"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="V"
+        android:layout_alignTop="@+id/btn_stage1_4"
+        android:layout_toEndOf="@+id/btn_stage1_4" />
+
+    <Button
+        android:id="@+id/btn_stage2_2"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅱ"
+        android:layout_alignTop="@+id/btn_stage2_1"
+        android:layout_toEndOf="@+id/btn_stage2_1" />
+
+    <Button
+        android:id="@+id/btn_stage2_3"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅲ"
+        android:layout_alignTop="@+id/btn_stage2_2"
+        android:layout_toEndOf="@+id/btn_stage2_2" />
+
+    <Button
+        android:id="@+id/btn_stage2_4"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅳ"
+        android:layout_alignTop="@+id/btn_stage2_3"
+        android:layout_toEndOf="@+id/btn_stage2_3" />
+
+    <Button
+        android:id="@+id/btn_stage2_5"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="V"
+        android:layout_alignTop="@+id/btn_stage2_4"
+        android:layout_alignEnd="@+id/btn_stage1_5" />
+
+    <Button
+        android:id="@+id/btn_stage3_1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅰ"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_stagechoose_stage3"
+        android:layout_toStartOf="@+id/btn_stage3_2" />
+
+    <Button
+        android:id="@+id/btn_stage3_2"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅱ"
+        android:layout_alignTop="@+id/btn_stage3_1"
+        android:layout_toStartOf="@+id/btn_stage2_3" />
+
+    <Button
+        android:id="@+id/btn_stage3_3"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅲ"
+        android:layout_alignBottom="@+id/btn_stage3_2"
+        android:layout_toEndOf="@+id/btn_stage3_2" />
+
+    <Button
+        android:id="@+id/btn_stage3_4"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅳ"
+        android:layout_alignTop="@+id/btn_stage3_3"
+        android:layout_toEndOf="@+id/btn_stage3_3" />
+
+    <Button
+        android:id="@+id/btn_stage3_5"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="V"
+        android:layout_alignTop="@+id/btn_stage3_4"
+        android:layout_alignEnd="@+id/btn_stage2_5" />
+
+    <Button
+        android:id="@+id/btn_stage4_1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅰ"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_stagechoose_stage4"
+        android:layout_toStartOf="@+id/btn_stage4_2" />
+
+    <Button
+        android:id="@+id/btn_stage4_2"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅱ"
+        android:layout_alignTop="@+id/btn_stage4_1"
+        android:layout_toStartOf="@+id/btn_stage3_3" />
+
+    <Button
+        android:id="@+id/btn_stage4_3"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅲ"
+        android:layout_alignBottom="@+id/btn_stage4_2"
+        android:layout_toStartOf="@+id/btn_stage3_4" />
+
+    <Button
+        android:id="@+id/btn_stage4_4"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="Ⅳ"
+        android:layout_alignTop="@+id/btn_stage4_3"
+        android:layout_alignEnd="@+id/btn_stage3_4" />
+
+    <Button
+        android:id="@+id/btn_stage4_5"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="V"
+        android:layout_alignBottom="@+id/btn_stage4_4"
+        android:layout_alignEnd="@+id/btn_stage3_5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a stage!"
+        android:textSize="30sp"
+        android:id="@+id/tv_stagechoose_intro"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stage 1 Village"
+        android:textSize="20dp"
+        android:id="@+id/tv_stagechoose_stage1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/tv_stagechoose_intro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Stage 2 Volcano"
+        android:textSize="20dp"
+        android:id="@+id/tv_stagechoose_stage2"
+        android:layout_below="@+id/btn_stage1_3"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Stage 3 Marine"
+        android:textSize="20dp"
+        android:id="@+id/tv_stagechoose_stage3"
+        android:layout_below="@+id/btn_stage2_3"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Stage 4 Sky"
+        android:textSize="20dp"
+        android:id="@+id/tv_stagechoose_stage4"
+        android:layout_below="@+id/btn_stage3_3"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="25dp"
+        android:id="@+id/btn_stage_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_stage4_1"
+        android:layout_alignEnd="@+id/btn_stage4_2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:textSize="25dp"
+        android:id="@+id/btn_stage_go"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btn_stage4_5"
+        android:layout_alignStart="@+id/btn_stage4_4" />
+
+
+</RelativeLayout>
