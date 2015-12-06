@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gesturegame"
+    android:versionCode="40"
+    android:versionName="1.0" >
+
+    // Set the permission
+    //Application needs permission to access the network
+    <uses-permission android:name="android.permission.INTERNET" />
+    //Allow access to the list of accounts in the Accounts Service
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    //Allow applications to receive authorization requests from manager
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!--<uses-permission android:name="android.permission.READ_PROFILE" />-->
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+        <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:backupAgent="TheBackupAgent">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <!--<meta-data-->
+            <!--android:name="com.google.android.gms.version"-->
+            <!--android:value="@integer/google_play_services_version" />-->
+        <meta-data android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIArYQKFCQA21GUBKptCEBAb2obp7R2m1amlbVtg" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MultiMode"
+            android:label="@string/app_name" >
+        </activity>
+        //To use Facebook Login or Share
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        //Sending Images or Videos
+        <provider android:authorities="com.wy.facebook.app.FacebookContentProvider896424557071592"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+        <activity
+            android:name=".StagesActivity"
+            android:label="Stage Choose">
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:label="Game" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings" >
+        </activity>
+        <!--<activity-->
+            <!--android:name=".MultiPlayerActivity"-->
+            <!--android:label="MultiPlayer" >-->
+        <!--</activity>-->
+        <activity
+            android:name=".ExtraActivity"
+            android:label="Extra" >
+        </activity>
+        <activity
+            android:name=".home"
+            android:label="@string/title_activity_home"
+            android:parentActivityName=".MultiMode" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.apple.authentication.MultiMode" />
+        </activity>
+        <activity android:name=".SingleMode">
+        </activity>
+        <activity
+            android:name=".register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity android:name=".Display"></activity>
+        <activity android:name=".SignUp"></activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".SingleGameActivity"
+            android:label="Game" >
+        </activity>
+    </application>
+
+</manifest>

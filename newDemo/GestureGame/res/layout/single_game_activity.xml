@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:text="Stage 1-3"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_monster_hp"
+        android:text="Monster HP 100"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_monster_gesture"
+        android:text=" "
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text="---VS---"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_compare_result"
+        android:text=" "
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_player_gesture"
+        android:text="Gesture:"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_rock"
+            android:text="Rock"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btn_scissor"
+            android:text="Scissor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_paper"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Paper"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_player_hp"
+        android:text="Player HP 100"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_counting"
+        android:text="3"
+        android:textSize="50sp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/tv_player_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/btn_ready"
+        android:text="Ready"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
